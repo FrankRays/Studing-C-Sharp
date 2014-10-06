@@ -220,7 +220,7 @@ namespace Petri2
                     return;
                 }
 
-            if (MessageBox.Show("Вы действительно хотите удалить " + name + " и все его связи?",
+            if (MessageBox.Show("Are you sure you want to delete " + name + " and all its links?",
                     "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,
                     MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
@@ -448,7 +448,7 @@ namespace Petri2
         {
             if (ArrowStarted)
             {
-                global.outtxt.Text = "Сначала закончите стрелочку";
+                global.outtxt.Text = "Set arrow ending at first";
                 return;
             }
 
@@ -839,7 +839,7 @@ namespace Petri2
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
             OpenFileDialog sfd = new OpenFileDialog();
-            sfd.Filter = "Файлы Петри (*.petri)|*.petri"; //"Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*"
+            sfd.Filter = "File Petri (*.petri)|*.petri"; //"Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*"
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 toolStripButton8_Click(sender, e);//new
@@ -869,7 +869,7 @@ namespace Petri2
             if (filename == null)
             {
                 SaveFileDialog sfd = new SaveFileDialog();
-                sfd.Filter = "Файлы Петри (*.petri)|*.petri";
+                sfd.Filter = "File Petri (*.petri)|*.petri";
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
                     filename = sfd.FileName;

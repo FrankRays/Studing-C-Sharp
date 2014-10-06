@@ -25,9 +25,9 @@ namespace Notebook
             clpbrd = new CLPBRD();
             clpbrd.listBox1.DoubleClick += вставкаToolStripMenuItem_Click;
 
-            statusStrip1.Items[0].Text = "строка "
+            statusStrip1.Items[0].Text = "Ln "
                 + (richTextBox1.GetLineFromCharIndex(richTextBox1.SelectionStart) + 1).ToString()
-                + " столбец "
+                + " Col "
                 + (richTextBox1.SelectionStart - richTextBox1.GetFirstCharIndexOfCurrentLine()).ToString()
                 + "                ";
 
@@ -36,7 +36,7 @@ namespace Notebook
 
         DialogResult msg()
         {
-            return MessageBox.Show("Документ не сохранен. Сохранить?",
+            return MessageBox.Show("Document not saved. Save?",
                     "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, 
                     MessageBoxDefaultButton.Button1);
                 
@@ -172,9 +172,9 @@ namespace Notebook
 
         private void tick(object sender, EventArgs e)
         {
-            statusStrip1.Items[0].Text = "сторка "
+            statusStrip1.Items[0].Text = "Ln "
                 + (richTextBox1.GetLineFromCharIndex(richTextBox1.SelectionStart) + 1).ToString()
-                + " столбец "
+                + " Col "
                 + (richTextBox1.SelectionStart - richTextBox1.GetFirstCharIndexOfCurrentLine()).ToString()
                 + "";
 

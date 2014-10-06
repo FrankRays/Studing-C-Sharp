@@ -97,8 +97,5 @@ namespace Petri2
                 return s;
             }
         }
-
-
-
     }
 }

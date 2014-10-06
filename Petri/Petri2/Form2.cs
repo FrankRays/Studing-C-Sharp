@@ -49,11 +49,11 @@ namespace Petri2
 
 
             dataGridView3.ColumnCount = 5;
-            dataGridView3.Columns[0].Name = "Такт";
+            dataGridView3.Columns[0].Name = "Tact";
             dataGridView3.Columns[1].Name = "№";
-            dataGridView3.Columns[2].Name = "Начальная";
-            dataGridView3.Columns[3].Name = "Конечная";
-            dataGridView3.Columns[4].Name = "Время";
+            dataGridView3.Columns[2].Name = "Begin";
+            dataGridView3.Columns[3].Name = "End";
+            dataGridView3.Columns[4].Name = "Time";
 
             dataGridView3.ClearSelection();
             max = 0;
@@ -67,7 +67,7 @@ namespace Petri2
                 string strNum = dataGridView1.Rows[0].Cells[i].Value.ToString();
                 if (!int.TryParse(strNum, out num))
                 {
-                    MessageBox.Show("Ошибка: неправильный формат данных.");
+                    MessageBox.Show("Error: incorrect data format.");
                 }
                 else
                     prlist.Add(num);
@@ -75,7 +75,7 @@ namespace Petri2
 
             if (!Check())
             {
-                MessageBox.Show("Приоритеты не должны быть равны.");
+                MessageBox.Show("Priority shoud not be equal.");
                 return;
             }
 
@@ -105,7 +105,7 @@ namespace Petri2
                                 string strNum = dataGridView2.Rows[0].Cells[n].Value.ToString();
                                 if (!int.TryParse(strNum, out a))
                                 {
-                                    MessageBox.Show("Ошибка: неправильный формат данных.");
+                                    MessageBox.Show("Error: incorrect data format.");
                                     continue;
                                 }
 
@@ -138,7 +138,7 @@ namespace Petri2
                 }
                 //if (!b) j--;
             }
-            MessageBox.Show("Выполнение успешно завершено.");
+            MessageBox.Show("Completed succeeded.");
 
             for (int i = 0; i < data.PList.Count; i++)
             {

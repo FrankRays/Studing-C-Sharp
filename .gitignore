@@ -1,3 +1,4 @@
 *.suo
 to do\*
 *\obj\*
+*\bin\*
