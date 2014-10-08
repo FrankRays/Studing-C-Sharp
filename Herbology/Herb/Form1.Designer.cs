@@ -101,6 +101,7 @@
             this.columnHeader5,
             this.columnHeader6});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(0, 40);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(554, 392);
@@ -171,7 +172,7 @@
             this.MinimumSize = new System.Drawing.Size(570, 470);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
-            this.Text = "Form1";
+            this.Text = "Herbology";
             this.ResumeLayout(false);
             this.PerformLayout();
 

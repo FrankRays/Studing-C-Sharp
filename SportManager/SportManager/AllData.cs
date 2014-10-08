@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Laba2
+namespace SportManager
 {
     [Serializable()]
     public class AllData
