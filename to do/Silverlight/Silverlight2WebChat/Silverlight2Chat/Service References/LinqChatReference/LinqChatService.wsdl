@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="LinqChatService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:41885/LinqChatService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:41885/LinqChatService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:41885/LinqChatService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Silverlight2Chat.Web" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILinqChatService_UserExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserExist" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_UserExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_GetMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessages" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_GetMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_InsertMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessage" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_InsertMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_GetUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsers" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_GetUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_LogOutUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:LogOutUser" />
+  </wsdl:message>
+  <wsdl:message name="ILinqChatService_LogOutUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogOutUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILinqChatService">
+    <wsdl:operation name="UserExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinqChatService/UserExist" message="tns:ILinqChatService_UserExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinqChatService/UserExistResponse" message="tns:ILinqChatService_UserExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinqChatService/GetMessages" message="tns:ILinqChatService_GetMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinqChatService/GetMessagesResponse" message="tns:ILinqChatService_GetMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinqChatService/InsertMessage" message="tns:ILinqChatService_InsertMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinqChatService/InsertMessageResponse" message="tns:ILinqChatService_InsertMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinqChatService/GetUsers" message="tns:ILinqChatService_GetUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinqChatService/GetUsersResponse" message="tns:ILinqChatService_GetUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LogOutUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinqChatService/LogOutUser" message="tns:ILinqChatService_LogOutUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinqChatService/LogOutUserResponse" message="tns:ILinqChatService_LogOutUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILinqChatService" type="tns:ILinqChatService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserExist">
+      <soap:operation soapAction="http://tempuri.org/ILinqChatService/UserExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <soap:operation soapAction="http://tempuri.org/ILinqChatService/GetMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessage">
+      <soap:operation soapAction="http://tempuri.org/ILinqChatService/InsertMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <soap:operation soapAction="http://tempuri.org/ILinqChatService/GetUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOutUser">
+      <soap:operation soapAction="http://tempuri.org/ILinqChatService/LogOutUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LinqChatService">
+    <wsdl:port name="BasicHttpBinding_ILinqChatService" binding="tns:BasicHttpBinding_ILinqChatService">
+      <soap:address location="http://localhost:41885/LinqChatService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

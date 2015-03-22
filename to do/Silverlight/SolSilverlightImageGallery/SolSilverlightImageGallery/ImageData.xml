@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Images>
+
+<Image>
+    <ImageName>Gaara</ImageName>
+    <ImagePath>../Images/Gaara.png</ImagePath>
+  </Image>
+
+  <Image>
+    <ImageName>Choji Akimichi</ImageName>
+    <ImagePath>../Images/Choji.png</ImagePath>
+  </Image>
+
+  <Image>
+    <ImageName>Jiraiya</ImageName>
+    <ImagePath>../Images/Jiraiya.jpg</ImagePath>
+  </Image>
+
+  <Image>
+    <ImageName>Kakashi Hatake</ImageName>
+    <ImagePath>../Images/Kakashi.png</ImagePath>
+  </Image>
+
+<Image>
+    <ImageName>Kiba Inuzuka</ImageName>
+    <ImagePath>../Images/Kiba.png</ImagePath>
+  </Image>
+<Image>
+    <ImageName>Naruto Uzumaki</ImageName>
+    <ImagePath>../Images/Naruto.jpg</ImagePath>
+  </Image>
+
+<Image>
+     <ImageName>Neji Hyuuga</ImageName>
+     <ImagePath>../Images/Neji.jpg</ImagePath>
+  </Image>
+
+<Image>
+     <ImageName>Rock Lee</ImageName>
+    <ImagePath>../Images/RockLee.jpg</ImagePath>
+  </Image>
+
+<Image>
+     <ImageName>Sai</ImageName>
+    <ImagePath>../Images/Sai.jpg</ImagePath>
+  </Image>
+
+<Image>
+  <ImageName>Shikamaru Nara</ImageName>
+    <ImagePath>../Images/Shikamaru.jpg</ImagePath>
+  </Image>
+
+<Image>
+  <ImageName>Shino Aburame</ImageName>
+    <ImagePath>../Images/Shino.jpg</ImagePath>
+  </Image>
+
+<Image>
+  <ImageName>Yamato</ImageName>
+    <ImagePath>../Images/Yamato.jpg</ImagePath>
+  </Image>
+
+</Images>

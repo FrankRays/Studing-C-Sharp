@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight2Chat", "..\..\..\..\Desktop\Silverlight2WebChat\Silverlight2Chat\Silverlight2Chat.csproj", "{7D7B657F-D21C-4719-BA25-B63B75D74167}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68A25CCF-ECF5-49D5-8C5B-0E3511B8F670} = {68A25CCF-ECF5-49D5-8C5B-0E3511B8F670}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight2Chat.Web", "..\..\..\..\Desktop\Silverlight2WebChat\Silverlight2Chat.Web\Silverlight2Chat.Web.csproj", "{68A25CCF-ECF5-49D5-8C5B-0E3511B8F670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D7B657F-D21C-4719-BA25-B63B75D74167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7B657F-D21C-4719-BA25-B63B75D74167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7B657F-D21C-4719-BA25-B63B75D74167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7B657F-D21C-4719-BA25-B63B75D74167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A25CCF-ECF5-49D5-8C5B-0E3511B8F670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A25CCF-ECF5-49D5-8C5B-0E3511B8F670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A25CCF-ECF5-49D5-8C5B-0E3511B8F670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A25CCF-ECF5-49D5-8C5B-0E3511B8F670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

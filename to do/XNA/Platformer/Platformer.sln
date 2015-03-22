@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platformer", "Platformer\Platformer\Platformer.csproj", "{32CFD587-DCF8-4B26-B63A-15E0895136F6}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PlatformerContent", "Platformer\PlatformerContent\PlatformerContent.contentproj", "{2A68A585-5DE2-4E48-8A3C-281EB6C81C4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32CFD587-DCF8-4B26-B63A-15E0895136F6}.Debug|x86.ActiveCfg = Debug|x86
+		{32CFD587-DCF8-4B26-B63A-15E0895136F6}.Debug|x86.Build.0 = Debug|x86
+		{32CFD587-DCF8-4B26-B63A-15E0895136F6}.Release|x86.ActiveCfg = Release|x86
+		{32CFD587-DCF8-4B26-B63A-15E0895136F6}.Release|x86.Build.0 = Release|x86
+		{2A68A585-5DE2-4E48-8A3C-281EB6C81C4B}.Debug|x86.ActiveCfg = Debug|x86
+		{2A68A585-5DE2-4E48-8A3C-281EB6C81C4B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

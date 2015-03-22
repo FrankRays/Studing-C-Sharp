@@ -1,0 +1,56 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="SilverlightDemo.SphereControl"
+    MouseEnter="evt_MouseEnter" MouseLeave="evt_MouseLeave" 
+	d:DesignWidth="50" d:DesignHeight="50" xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows"
+    >
+
+    <Grid x:Name="LayoutRoot">
+        <vsm:VisualStateManager.VisualStateGroups>
+            <vsm:VisualStateGroup x:Name="VisualStateGroup">
+                <vsm:VisualStateGroup.Transitions>
+                    <vsm:VisualTransition GeneratedDuration="00:00:00.1"/>
+                    <vsm:VisualTransition GeneratedDuration="00:00:00.5000000" To="Normal"/>
+                </vsm:VisualStateGroup.Transitions>
+                <vsm:VisualState x:Name="Normal"/>
+                <vsm:VisualState x:Name="MouseOver">
+                    <Storyboard >
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                            <SplineDoubleKeyFrame Value="1.3"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                            <SplineDoubleKeyFrame Value="1.3"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+                        	<SplineDoubleKeyFrame Value="0.729"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)">
+                        	<SplineDoubleKeyFrame Value="0.231"/>
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </vsm:VisualState>
+            </vsm:VisualStateGroup>
+        </vsm:VisualStateManager.VisualStateGroups>
+        <Ellipse x:Name="Ellipse" RenderTransformOrigin="0.5,0.5" >
+			<Ellipse.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Ellipse.RenderTransform>
+			<Ellipse.Fill>
+				<RadialGradientBrush GradientOrigin="0.258,0.21">
+					<GradientStop x:Name="OuterColor" Offset="0.9"/>
+					<GradientStop x:Name="InnerColor" Offset="0.312"/>
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+				</RadialGradientBrush>
+			</Ellipse.Fill>
+		</Ellipse>
+	</Grid>
+</UserControl>

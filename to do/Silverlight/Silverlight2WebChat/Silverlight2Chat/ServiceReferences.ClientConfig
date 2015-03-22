@@ -1,0 +1,19 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_ILinqChatService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None">
+                        <message algorithmSuite="Default" />
+                    </security>
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:41885/LinqChatService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ILinqChatService"
+                contract="LinqChatReference.ILinqChatService" name="BasicHttpBinding_ILinqChatService" />
+        </client>
+    </system.serviceModel>
+</configuration>

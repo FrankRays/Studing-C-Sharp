@@ -1,0 +1,9 @@
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\bin\Debug\LightChain.exe.config
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\obj\Debug\LightChain.csprojResolveAssemblyReference.cache
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\obj\Debug\LightChain.Form1.resources
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\obj\Debug\LightChain.Properties.Resources.resources
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\obj\Debug\LightChain.csproj.GenerateResource.Cache
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\bin\Debug\LightChain.exe
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\bin\Debug\LightChain.pdb
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\obj\Debug\LightChain.exe
+c:\users\princ_000\documents\visual studio 2012\Projects\LightChain\LightChain\obj\Debug\LightChain.pdb

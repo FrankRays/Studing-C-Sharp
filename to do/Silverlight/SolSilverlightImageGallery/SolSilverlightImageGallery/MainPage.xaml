@@ -1,0 +1,47 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:Local="clr-namespace:SolSilverlightImageGallery"
+	mc:Ignorable="d"
+	x:Class="SolSilverlightImageGallery.MainPage"
+	d:DesignWidth="640" d:DesignHeight="480">
+	
+	<UserControl.Resources>
+		<DataTemplate x:Key="ImageGalleryDataTemplate">
+                <Border BorderBrush="#FFADABA8" BorderThickness="2"  Width="155" Height="155" Padding="3" Margin="3" CornerRadius="10">
+                    <!--Bind Image Path in Image Control-->
+                    <Image Source="{Binding ImagePath}" Stretch="Fill"  HorizontalAlignment="Center">
+                        <!--View Large Image on Image Control Tooltip-->
+                        <ToolTipService.ToolTip>
+                            <Grid>
+                                <Image Source="{Binding ImagePath}" Stretch="Fill" HorizontalAlignment="Center" Height="150" Width="150"></Image>
+                            </Grid>
+                        </ToolTipService.ToolTip>
+                    </Image>
+                </Border>
+		</DataTemplate>
+		
+		<ItemsPanelTemplate x:Key="ImageGalleryItemsPanelTemplate">
+			
+			<!--Display Images on UniformGrid Panel-->
+			<Local:UniformGrid Columns="2" HorizontalAlignment="Center" VerticalAlignment="Stretch"></Local:UniformGrid>
+			
+		</ItemsPanelTemplate>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<ListBox x:Name="LsImageGallery" ItemsSource="{Binding}" 
+                 ItemTemplate="{StaticResource ImageGalleryDataTemplate}" 
+                 ItemsPanel="{StaticResource ImageGalleryItemsPanelTemplate}">
+			<ListBox.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="Black"/>
+					<GradientStop Color="#FF1E2A2F" Offset="1"/>
+				</LinearGradientBrush>
+			</ListBox.Background>
+		
+		</ListBox>
+	</Grid>
+</UserControl>

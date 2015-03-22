@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="00d852d6-4335-4e3e-a910-652069cfc473" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:41885/LinqChatService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LinqChatService.wsdl" MetadataType="Wsdl" ID="ea8023c8-f443-4167-95ee-472d1cc60c3a" SourceId="1" SourceUrl="http://localhost:41885/LinqChatService.svc?wsdl" />
+    <MetadataFile FileName="LinqChatService.xsd" MetadataType="Schema" ID="c4587884-0bc4-4bc5-b81c-ebdbf21e701a" SourceId="1" SourceUrl="http://localhost:41885/LinqChatService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LinqChatService1.xsd" MetadataType="Schema" ID="75f8f582-3ee4-47d4-8c44-3fd14ac6ca2f" SourceId="1" SourceUrl="http://localhost:41885/LinqChatService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LinqChatService2.xsd" MetadataType="Schema" ID="0580d4da-dc25-4bd6-87e6-f141c0470da8" SourceId="1" SourceUrl="http://localhost:41885/LinqChatService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LinqChatService.disco" MetadataType="Disco" ID="de3c5ce9-6060-4ea4-8235-cd9829d84a81" SourceId="1" SourceUrl="http://localhost:41885/LinqChatService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

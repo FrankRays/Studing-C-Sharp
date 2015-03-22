@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationApp", "NavigationApp\NavigationApp.csproj", "{4DA21F13-8E3B-442D-B4AD-A17FF86A1DFE}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NavigationApp.Web", "NavigationApp.Web\", "{C84BB791-B2BB-4B23-BE77-CB8635B7741A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/NavigationApp.Web"
+		Debug.AspNetCompiler.PhysicalPath = "NavigationApp.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\NavigationApp.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/NavigationApp.Web"
+		Release.AspNetCompiler.PhysicalPath = "NavigationApp.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\NavigationApp.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1083"
+		DefaultWebSiteLanguage = "Visual C#"
+		ProjOutputReferences = "{4DA21F13-8E3B-442D-B4AD-A17FF86A1DFE}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DA21F13-8E3B-442D-B4AD-A17FF86A1DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA21F13-8E3B-442D-B4AD-A17FF86A1DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA21F13-8E3B-442D-B4AD-A17FF86A1DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA21F13-8E3B-442D-B4AD-A17FF86A1DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84BB791-B2BB-4B23-BE77-CB8635B7741A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84BB791-B2BB-4B23-BE77-CB8635B7741A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84BB791-B2BB-4B23-BE77-CB8635B7741A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84BB791-B2BB-4B23-BE77-CB8635B7741A}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

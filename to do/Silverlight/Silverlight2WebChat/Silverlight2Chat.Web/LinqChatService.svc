@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Silverlight2Chat.Web.LinqChatService" CodeBehind="LinqChatService.svc.cs" %>
